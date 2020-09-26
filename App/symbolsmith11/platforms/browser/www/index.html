@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Symbol Smith</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+          <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script>
+            //global variable to store photo URL data
+            
+            var imgCapt = [];
+            //image capt dummy value
+            //var imgCapt = ["dummy value"];
+            
+            //
+         var smallImage = document.getElementById('smallImage');
+    var smallerImage = document.getElementById('smallerImage');    //change 1
+    //var smallerAImage = document.getElementById('smallerAImage');    //change 1
+    var smallerAaImage = document.getElementById('smallerAaImage');    //change 1
+    var smallestImage = document.getElementById('smallestImage');    //change 3
+            
+        </script>
+        <script src="ss.java.js" type="text/javascript"></script>
+        <link href="ss1.design.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        
+  <script src="testJavacopy5.NEW.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+       <script src="workingCamera1.1.js" type="text/javascript"></script>
+        <style>
+            .emptyDiv{
+                height:20px;
+                width: 100%;
+            }
+            
+            #header2 {
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0;
+    overflow: hidden;
+    border-bottom-style:solid;
+    border-bottom-color:#c5b621;
+    border-bottom-width: 5px;
+    /*background-color: #E8F1F5;*/
+}
+            
+            .banner{
+             width: 100%;
+                 height: 100%;
+            }
+            
+            #selectMarkWrapper{
+             position: relative;
+             top: 20px;
+            }
+            
+            .bannerDiv {
+                position: absolute;
+                z-index : 10;
+            }
+            
+            .tabBorder {
+                border-style: solid;border-width: 2px;border-color: #C6B621;
+            }
+            /* hide input */
+            .newSave{
+                /*width:100%;
+    background-color:#FFDE25;
+    color:black;
+    font-family:SF UI Display;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;*/
+                color:#315b3f;
+                font-size: 130%;
+                font-family: 'Open Sans', sans-serif;
+                font-weight:lighter;
+                text-align: center;
+                
+            }         
+
+#keyClick.input {
+  color: rgb(60, 0, 248);  /* change [input cursor color] by this*/
+  text-shadow: 0px 0px 0px #D60B0B; /* change [input font] by this*/
+  -webkit-text-fill-color: transparent;
+}
+            /*-----------*/
+            
+            
+            .hideDiv{
+             display:none;   
+            }
+            /* rectangles-----------------------*/
+            .rectangle {
+	width: 200px;
+	height: 47px;
+	/*background: #4CAECD;*/
+        background: #c8b600;
+        /*z-index: 9;*/
+}
+            
+ .rectangle2 {
+	width: 200px;
+	height: 47px;
+	/*background: #4CAECD;*/
+        background: #c8b600;
+        /*z-index: 9;*/
+}            
+            
+ .rectangle3 {
+	width: 200px;
+	height: 47px;
+	/*background: #4CAECD;*/
+        background: #c8b600;
+        /*z-index: 9;*/
+}           
+            
+            
+            
+            
+            /*------------------------------------/
+             /*.letterStyle:active {background: red;}*/
+             .letterStyle {/*background-color: #E8F1F5;*/
+            height: 60px;
+            opacity: 1;
+             }
+             .periodStyle {/*background-color: #E8F1F5;*/
+            height: 90px;
+            opacity: 1;
+             }
+              .standardStyle {/*background-color: #E8F1F5;*/
+            height: 90px;
+            opacity: 1;
+             }
+              .regionStyle {/*background-color: #E8F1F5;*/
+            height: 100px;
+            opacity: 1;
+             }
+              .dutyStyle {/*background-color: #E8F1F5;*/
+            height: 65px;
+            width: 65px;
+            opacity: 1;
+             }
+             /*.letterStyle:active {
+                 background-color: #283E56;
+}*/
+         /* my square to appear behind the letters/////////*/
+         .square {
+  height: 50px;
+  width: 50px;
+  background-color: #4CAECD;
+ 
+  
+}
+ 
+.squareStyle{position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -3;}
+/*
+#loadIcon{
+
+    width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;
+    
+    display: block;
+    margin: 0 auto;
+}
+
+#loadIcon1{
+
+    width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;
+    
+    display: block;
+    margin: 0 auto;
+}
+
+#loadIcon2{
+
+    width: 55px;
+    height: 55px;
+  
+  
+    -webkit-animation: mymove 5s infinite; 
+    animation: mymove 5s infinite;
+    
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+}*/
+/*class handles initial loading rotation */
+.loadIcon3Class{
+
+    width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    
+    display: block;
+    margin: 0 auto;
+
+}
+/*class handles final rotation */
+.loadIcon3ClassFin {
+width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymoveFin 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymoveFin 1s infinite;
+    
+    display: block;
+    margin: 0 auto;    
+}
+/*--------------------------*/
+/*class handles initial loading rotation */
+.loadIcon2Class{
+
+    width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    
+    display: block;
+    margin: 0 auto;
+
+}
+/*class handles final rotation */
+.loadIcon2ClassFin {
+width: 60px;
+    height: 60px;
+  
+  
+    -webkit-animation: mymoveFin2 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymoveFin2 1s infinite;
+    
+    display: block;
+    margin: 0 auto;    
+}
+/*--------------------------*/
+
+
+.imgText{
+    display: inline;
+text-align: justify;
+    width: 60px;
+   position:absolute;
+   left:200px;
+   top:300px;
+}
+
+.imgText2{
+text-align: justify;
+    width: 60px;
+   position:absolute;
+   left:205px;
+   top:280px;
+}
+
+.imgText3{
+text-align: justify;
+    width: 60px;
+   position:absolute;
+   left:205px;
+   top:290px;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(180deg);}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymoveFin {
+    100% {-webkit-transform: rotate(-360deg);}
+}
+
+/* Standard syntax */
+@keyframes mymoveFin {
+    100% {transform: rotate(-360deg);}
+}
+/*--------------------- class 2*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymoveFin2 {
+    100% {-webkit-transform: rotate(-360deg);}
+}
+
+/* Standard syntax */
+@keyframes mymoveFin2 {
+    100% {transform: rotate(-360deg);}
+}
+
+
+.symbolVisibility{
+    display: none;
+}
+
+
+/*       sideways animations         */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+.fourOtherAppear{
+ opacity: 0;   
+}
+.centered-block {
+     
+    left: 50%; 
+    -webkit-transform: translate(-50%, 0); 
+    position: absolute;
+}
+
+.symbolStyleResult {
+     
+    
+    position: absolute;
+    top: 100px; 
+}
+
+.center-this {position: absolute; left: 50%; -webkit-transform: translate(-50%, 0);
+
+}
+
+.tier1 {
+    
+    
+    top:55px;
+}
+
+.tier2 {
+    
+    
+    top:15px;
+}
+
+.tier0 {
+    
+    
+    top:65px;
+}
+
+.tabClasses{
+height:50px; 
+    
+border-color: #C6B621;
+margin: 0; padding:0;border-radius: 0px;
+}
+
+.selectMark{
+    background-color: #dfdfdf; border-radius: 25px; height: 100px; width: 100px;
+    /*border-style: solid; border-color: #808080;*/ 
+}
+
+.imgIdStandardTop{
+    position: relative;
+    left: 9px;
+    top: 0px;
+    height: 100px;
+    width: 80px;
+}
+
+.imgIdDutyTop{
+ position: relative;
+    left: 5px;
+    top: 3px;
+    height: 100px;
+    width: 100px;    
+}
+
+.imgIdLetterTop{
+ position: relative;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    width: 100px;     
+}
+        </style>
+    </head>
+    
+    <body>
+      <!-- ///////// START SCREEN //////// -->
+      <div data-role="page" id="startScrn">
+          <img id="logoRotate" src="ss.assets/whiteLogo-06.png" alt=""/>
+         <a href="#onOne" class="ui-btn ui-btn-inline ui-corner-all" id="getStart">Start Tour <i class="fa fa-angle-double-right"></i></a>
+         <a href="#menuScrn" id="skipBtn">Skip, Access Main Menu</a>
+      </div> <!-- END OF START SCREEN!!!!!!! -->
+           
+      <!-- ///////// ONBOARDING //////// -->
+       <div data-role="page" id="onOne">
+         <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+      </div> 
+       <div data-role="page" id="onTwo">
+         <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+      </div>
+      <div data-role="page" id="onThree">
+         <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+      </div> 
+      <div data-role="page" id="onFour">
+         <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+      </div> 
+      <div data-role="page" id="onFive">
+         <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+      </div> 
+      <div data-role="page" id="onSix">
+         
+            <a href="#cameraPop2" class="ui-btn ui-btn-inline ui-corner-all" id="tourNew" data-rel="popup" data-position-to="window">Begin A New Task</a>
+            <br>
+            <br>
+            <br>
+            <a href="#howPop" id="tourEx" data-rel="popup" data-position-to="window">Learn more, before I begin.</a>
+            
+            <!-- How Pop Up -->    
+          <div data-role="popup" id="howPop" style="max-width:350px;"> 
+           <div role="main" id="how2POP" class="ui-content">
+            <a href="#startProj"  class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>  
+            <p style="text-align: center">How can we help you...</p>
+ 
+           <a href="#onOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Tutorial</a>
+           <a href="#onOpen" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Top Tips</a>    
+           </div>
+            </div>
+            
+            <div data-role="popup" id="cameraPop2" style="max-width:350px;"> 
+           <div role="main" id="startPOP2" class="ui-content">
+            <a href="#startProj" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>  
+           <p style="text-align: center">Upload an image of your article</p>
+ 
+           <a id="useCamera" onclick="capturePhotoEdit();" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Camera <i class="fa fa-camera"></i></a>
+           <a id="useLibrary" onclick="getPhoto(pictureSource.PHOTOLIBRARY);" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo Library <i class="fa fa-photo"></i></a>           
+      </div>
+      </div>
+      </div> 
+      
+       <!-- ///////// TIPS //////// -->
+      <div data-role="page" id="onOpen">
+         
+      </div> 
+       <div data-role="page" id="onCamera">
+           <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+           <br>
+           <img src="ss.assets/onboad.assets/camera.gif" alt=""/>
+           <div class="captext"><h3 style="color:#1989AC">Upload Image</h3>Try placing the article on a white background to stop the glare of the silver and to help the camera focus on the hallmarks.</div>
+       </div>
+ 
+       <div data-role="page" id="onSelect">
+           <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+           <br>
+           <img src="ss.assets/onboad.assets/categories.gif" alt=""/>
+           <div class="captext"><h3 style="color:#1989AC">Identify Marks</h3>Select a matching mark from the three key sections: <strong>region, period and letter</strong>.<br><br> Any additional marks can be matched in our fourth section. 
+                ** Marks may not appear on your item in the same order as our sections, this not problematic you can continue to match them.</div> 
+      </div>  
+       <div data-role="page" id="onCategories">
+           <div class="skipButt"><a href="#menu" style="text-decoration:none;" onclick="openNav()">Skip</a></div>
+           <br>
+           <img src="ss.assets/onboad.assets/select.gif" alt=""/>
+           <div class="captext"><h3 style="color:#1989AC;text-align:center">Hallmark Categories</h3></div>
+           <div class="captextSec"><p><strong>Region</strong> (map pin) or standard marks. Helps identify the origin.</p> 
+         <p><strong>Period</strong> (calender) Identify's the assay office which determines a location & time period.</p> 
+         <p><strong>Year</strong> (abc) Letters show the year of manufacture</p> 
+         <p><strong>Additional</strong> (star) Will not be present on all marks. Usually recognised as a sovereigns head</p> 
+       </div> 
+       </div>
+       <div data-role="page" id="onEnd">
+         
+            <a href="#cameraPop3" class="ui-btn ui-btn-inline ui-corner-all" id="tourNew" data-rel="popup" data-position-to="window">Begin A New Task</a>
+            <br>
+            <br>
+            <br>
+            <a href="#menuScrn" style="margin-left:110px;">Return to main menu</a>
+            
+            
+            <div data-role="popup" id="cameraPop3" style="max-width:350px;"> 
+           <div role="main" id="startPOP3" class="ui-content">
+            <a href="#startProj" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>  
+           <p style="text-align: center">Upload an image of your article</p>
+ 
+           <a onclick="capturePhotoEdit();" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Camera <i class="fa fa-camera"></i></a>
+           <a onclick="getPhoto(pictureSource.PHOTOLIBRARY);" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo Library <i class="fa fa-photo"></i></a>           
+      </div>
+      </div>
+      </div> 
+       
+        
+       <!-- END OF ON-BOARDING !!!!!!! -->
+      
+      <!-- ///////// MENU //////// -->
+      <div data-role="page" id="menuScrn">
+    
+          <ul id="menuTop">
+              <li id="qmBtn"><a href="#startProj"><i class="fa fa-plus"></i></a></li>
+              <li id="hw2Btn"><a href="#howPop2" data-rel="popup" data-position-to="window"><i class="fa fa-info"></i></a></li> </ul>
+          
+              <ul id="menuBot">   
+              <li id="exBtn"><a href="#exploreScrn"><i class="fa fa-search"></i></a></li>
+              <li id="siBtn"><a href="#savedItems"><i class="fa fa-folder"></i></a></li> </ul> 
+              
+              
+              <!-- How Pop Up -->    
+          <div data-role="popup" id="howPop2" style="max-width:350px;"> 
+           <div role="main" id="how2POP" class="ui-content">
+            <a href="#startProj" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>  
+           <p style="text-align: center">How can we help you...</p>
+ 
+           <a href="#onOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Tutorial</a>
+           <a href="#onOpen" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Top Tips</a>    
+           </div>
+            </div>   
+       </div> <!-- end of menu page --> 
+      
+      <!-- Nav slide out menu -->
+     <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#startProj" id="quickMatchBtn" onclick="closeNav()">Quick Match  <i class="fa fa-plus"></i></a>
+     <a href="#onOpen" onclick="closeNav()">How To <i class="fa fa-info"></i></a>
+     <a href="#exploreScrn" onclick="closeNav()">Explore  <i class="fa fa-search"></i></a>
+     <a href="#savedItems" onclick="closeNav()">Saved Items  <i class="fa fa-folder"></i></a>
+     
+     </div>
+      <!-- END OF MENU !!!!!!! -->
+      
+      
+      <!-- ///////// START NEW PROJECT //////// -->
+      <div data-role="page" id="startProj">
+          
+          <ul id="headerSave">
+          <li id="headS"><a href="#" onclick="openNav()"><i class="fa fa-navicon"></i></a></li>
+
+          </ul>
+          <br>
+          <br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          
+          
+           <a href="#cameraPop" data-rel="popup" data-position-to="window" id="startProjectBtn" style="text-decoration: none" onclick="photoManagerCamera()">Start New Project</a>
+           
+           <!-- /// POP UP THAT CONNECTS TO CAMERA // -->  
+          <!-- Start New Project Pop Up -->    
+          <div data-role="popup" id="cameraPop" style="max-width:350px;"> 
+           <div role="main" id="startPOP" class="ui-content">
+            <a href="#startProj" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>  
+           <p style="text-align: center">Upload an image of your article</p>
+ 
+           <a onclick="capturePhotoEdit();" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Camera <i class="fa fa-camera"></i></a>
+           <a onclick="getPhoto(pictureSource.PHOTOLIBRARY);" href="#stepOne" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Photo Library <i class="fa fa-photo"></i></a>
+                
+      </div>
+      </div>
+
+      </div> <!-- END OF START PROJECT !!!!!!! -->
+      
+      
+       <!-- ///////// STEP 1 //////// -->
+      <div data-role="page" id="stepOne" style="">
+          
+          <ul id="header">
+          <li id="head"><a href="#" onclick="openNav()"><i class="fa fa-navicon"></i></a></li>
+          <li id="head" style="float:right"><i class="fa fa-plus dropbtn" onclick="myEditFunction()"></i></li>
+          </ul>
+          
+        <div class="editDrop">
+       <div id="myEditDropdown" class="dropdown-content">
+    <a href="#startProj" style="text-decoration: none;">New  <i class="fa fa-file-photo-o"></i></a>
+    <!-- <a href="#nameItem" style="text-decoration: none;">Save  <i class="fa fa-folder-open"></i></a> -->
+    <a href="#onOpen" style="text-decoration: none;">Help  <i class="fa fa-info-o"></i></a>
+    
+  </div>
+</div>
+  
+          <div role="main" class="ui-content">
+              <img src="ss.assets/3 Gill Tankard Tot Measure_Horace Woodward silver hallmarks - london.jpeg" alt="" style="width:100%"/> 
+              <!--<img style="display:inline; max-height:160px; width:auto;margin:0 auto;" id="loadingImage" src="ss.assets/placeHolder.png" alt=""/>-->
+              <!--<div style="display:inline; max-height:160px; width:auto;margin:0 auto;">
+              <img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="smallImage" src="" alt=""/> 
+              <img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="largeImage" src=""  alt=""/>
+              </div>-->
+              
+              
+              <div id="valInfo">
+              <p>Does your image contain similar marks to either of these three sections?</p>
+              <p>If <strong>Yes</strong>, choosing a matching section narrows your search and provides more accurate results</p>
+              
+                  
+              <br>
+              <a href="#stepTwo" id="lonOffice" onclick="openCat(event, 'oneRegion')" style="background-color:transparent;color:transparent;"><img src="ss.assets/noun_1097440_cc.png" alt="" style="width:16%; margin-left:5px;background-color:transparent;color:transparent;"/> 
+              <img src="ss.assets/noun_591410_cc.png" alt="" style="width:20%; margin-left:15px"></a>
+              <a href="#stepTwo" id="birOffice" style="background-color:transparent;color:transparent;" onclick="openCat(event, 'oneRegion')"> <img src="ss.assets/noun_974166_cc.png" alt="" style="width:18%; padding:5px; margin-left:15px;background-color:transparent;color:transparent;"/></a>
+              <a href="#stepTwo" id="dubOffice" style="background-color:transparent;color:transparent;" onclick="openCat(event, 'oneRegion')"> <img src="ss.assets/noun_25868_cc.png" alt="" style="width: 15%; padding:5px; margin-left:15px;background-color:transparent;color:transparent;"/></a>
+              <br>
+              <br>
+                <p>If <strong>No</strong>, see more <a href="#noMarks" style="text-decoration:none">information</a></p>
+                </div>
+
+              <div id="snackbar">You have chosen London <a href="#stepTwo" data-transition="flip">proceed <i class="fa fa-angle-double-right"></i></a></div>
+               
+      </div>
+          
+      </div> <!-- END OF STEP 1 !!!!!!! -->
+      
+       <!-- ///////// STEP 2 //////// -->
+      <div data-role="page" id="stepTwo" style="padding-bottom:0px;margin-bottom:0px;height:100%;overflow: hidden;background-color:rgb(196, 196, 196);">
+          <form style="position:absolute;top:40px;z-index: 0;">
+  
+ <input type="text" name="firstname" id="keyClick" oninput="displayLetter()" style="position:fixed;width:0;height:0;opacity:0;color: transparent;"><br>
+       <!--<input type="text" name="firstname" id="keyClick"  style="position:fixed;width:0;height:0;opacity:0;color: transparent;"><br>-->
+   
+ 
+ 
+ 
+ <!--<input type="text" name="firstname" id="keyClick" oninput="displayLetter()" ><br>-->
+
+</form>
+          
+          <ul id="header2" style="background-color:#ececec;">
+          <li id="head"><a href="#stepOne" id="clearButton" ><i class="fa fa-angle-double-left" style="position:relative;top:3.5px;"></i></a></li>
+          <li id="head" style="float:right; font-size:14px;position:relative;top:5px;"><a href="#stepThreeResult" id="firstSave">Show Summary<i class="fa fa-angle-double-right"></i></a></li>
+          </ul>
+          
+    <!-- //// USERS IMAGE // -->
+    <!--<img style="display:none; max-height:160px; width:auto;margin:0 auto;position:relative; z-index: 30" id="smallestImage" src="" alt=""/>
+    <img style="display:none; max-height:160px; width:auto;margin:0 auto;position:relative; z-index:30" id="largestImage" src=""  alt=""/>-->
+     <div id="wrapper" style="position:relative;top:50px;">
+<!--<img style="display:block; top:-17px; height:158px; width:340px;margin:0 auto;position:absolute;z-index:60; left:10px;" id="imageBorder" src="ss.assets/pictureBoundary1.4.png"  alt=""/>-->
+<img style="display:none; height:118px; width:300px;margin:0 auto;position:relative; z-index: 30" id="smallestImage" src="" alt=""/>
+    <img style="display:none; height:118px; width:300px;margin:0 auto;position:relative; z-index:30" id="largestImage" src=""  alt=""/>
+   <img src="ss.assets/3_Gill_Tankard.jpeg" id="rando" style="position: relative; z-index: 0; display:block; height:118px; width:300px;margin:0 auto;" alt=""/>
+
+<!--<img style="display:block; height:160px; width:auto;margin:0 auto;position:relative;z-index:55" id="dummyImage" src="ss.assets/3_Gill_Tankard.jpeg"  alt=""/>-->
+     </div>
+<!--<img src="ss.assets/3_Gill_Tankard.jpeg" id="rando" style="position: relative; z-index: 30; display:block; max-height:160px; width:auto;margin:0 auto;" alt=""/>-->
+   
+<div id="selectMarkWrapper" style="top:65px;padding: 0px; margin: 0px;">
+    <div id="selectMark" style="display:block;position:relative; z-index:90;padding-left: 3.5px; margin: 0px" data-role="navbar">
+        <!-- <p style="font-size: 15px; color:#561044">Selected Marks:</p> -->
+        <ul>
+            <li><div id="imgTag4" class="selectMark" style="border-width:2px 0px 2px 2px"></div></li>
+            <li><div id="imgTag1" class="selectMark" style="border-width:2px 0px 2px 0px"></div></li>
+            <li><div id="imgTag2" class="selectMark" style="border-width:2px 0px 2px 0px"><!--<img src='https://s3-eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LDateLetters1678-1998/A/DL.1678.png
+' id='imgIdLetter1' class='letterStyle symbolVisibility imgIdLetterTop'  alt=''/>--></div></li>
+            <li><div id="imgTag3" class="selectMark" style="border-width:2px 2px 2px 0px"></div></li> 
+        </ul> 
+    </div> 
+    <!--<img src="ss.assets/selectionBar1.4.png" style="top:-5px;display:block;position:absolute; z-index:80;width:95%;height:100%;padding:0% 2.5% 0% 2.5%;" alt=""/>-->
+</div>
+<div id="banner" class="bannerDiv" style="top:57px;"><img src="ss.assets/nudeBanner1.3.15a.png" class="banner" alt=""/></div>
+<div id="bannerB" class="bannerDiv" style="position:absolute; top:410px;z-index:15;margin-bottom:0px;padding-bottom:0px;"><img src="ss.assets/nudeBanner1.3.1b.png" class="banner" style="height:275px;width:82px;margin-bottom:0px;padding-bottom:0px;" alt=""/></div>
+<div style="position:relative;top:55px;"><p style="font-size: 15px;" id="choose">Choose a match from each of the sections:</p>
+    <p id="ThisIsRegion" style="display:none; font-size: 14px; position:relative; z-index:70"><!--Select from Region to locate your item. --></p>
+    <p id="ThisIsPeriod" style="display:none; font-size: 14px; position:relative; z-index:70"><!--Select from Period for location and year.--></p>
+    <p id="ThisIsYear" style="display:none; font-size: 14px; position:relative; z-index:70;left:-30px;"><!--Select a Letter to indicate an exact year. Enter a single letter and select done.--></p>
+    <p id="ThisIsOther" style="display:none; font-size: 14px;position:relative; z-index:70"><!--Marks in this section will not always appear</p>--></div>
+    
+    <div class="tab " id="Sectiontabs"  style="position:absolute;top:448px;left:0px;z-index:40">
+      <button class="tabClasses" style="width:60px; border-style: solid;border-width: 2px 0px 0px 2px;margin: 0; padding:0; border-radius: 0px;"  onclick="openCat(event, 'oneRegion');regionButtonFun();" id="regionBtn" ><i class="w3-margin-left fa fa-map-marker" style="font-size:26px;color:white"></i></button><!--
+      --><button class="tabClasses" style="width:60px; border-style: solid;border-width: 2px 0px 0px 2px; margin: 0; padding:0;border-radius: 0px;" onclick="openCat(event, 'twoPeriod');periodButtonFun();" id="periodBtn" ><i class="w3-margin-left fa fa-calendar-o" style="font-size:23px;color:white"></i></button><!--      
+      --><button class="tabClasses" style="width:60px; border-style: solid;border-width: 2px 0px 0px 2px; margin: 0; padding:0;border-radius: 0px;" onclick="openCat(event, 'threeYear')" id="yearBtn" ><i class="w3-margin-left fa fa-sort-alpha-asc" style="font-size:23px;color:white"></i></button>  
+      <button class="tabClasses" style="width:60px; border-style: solid;border-width: 2px 0px 2px 2px; margin: 0; padding:0;border-radius: 0px;" onclick="openCat(event, 'fourOther');dutyButtonFun();" id="otherBtn" ><i class="w3-margin-left fa fa-asterisk" style="font-size:23px;color:white"></i></button>    
+     </div>
+
+        <!--- TABS where the returned data will be displayed -->
+            <div id="adjustForPicture" style="position:absolute;top:160px;left:0px;width:400px;">  
+<!---------------- standard region ---------------->
+      <div id="oneRegion" class="tabcontent" style="opacity:0;position:absolute;top:230px;left:65px;">
+        <div class="emptyDiv"></div>
+      </div>
+    <!--<div id="oneRegionLoad" class="hideDiv">   
+    <div id="rectYear3" class="rectangle3" style="position:absolute;left:68px;top:255px;"> </div>
+      <div id="loadDiv1" class="imgText2" style=""><img src="ss.assets/loadingIcon.png" id="loadIcon1" class="loadIcon3Class" style="position:absolute;left:48px;top:-30px;z-index:12;" alt=""/>
+          <a id="loadingText1" style="position:absolute;left:52px;top:28px;">loading</a></div>
+    </div>-->
+    
+   
+    <div id="oneRegionLoad" class="">   
+    <div id="rectYear3" class="rectangle3" style="position:absolute;left:60px;top:290px;z-index:90;"> </div>
+      <div id="loadDiv1" class="imgText2" style=""><img src="ss.assets/loadingIcon.png" id="loadIcon1" class="loadIcon3Class" style="position:absolute;left:45px;top:3px;z-index:95;" alt="">
+          <div id="loadingText1" style="position:absolute;left:50px;top:65px;font-family: -apple-system, system-ui, BlinkMacSystemFont;font-size: 14px;" class="">loading</div></div>
+    </div>
+    <!---------------- standard region  end ---------------->
+
+    
+    
+    
+    
+    <!---------------- period                 ---------------->
+      
+     <div id="twoPeriod" class="tabcontent" style="opacity:0;position:absolute;top:230px;left:70px;">
+               <div class="emptyDiv"></div>
+
+      </div>
+    
+       <!--<div id="twoPeriodLoad" class="hideDiv">      
+    <div id="rectYear2" class="rectangle2" style="position:absolute;left:68px;top:318px;"></div>
+
+    <div id="loadDiv" class="imgText2" style="top:290px"><img src="ss.assets/loadingIcon.png" id="loadIcon" class="loadIcon3Class" style="position:absolute;left:50px;top:23px;z-index:11;" alt=""/>
+          <a id="loadingText" style="position:absolute;left:53px;top:85px;">loading</a></div>
+       </div>-->
+       
+       
+       <div id="twoPeriodLoad" class="">      
+    <div id="rectYear2" class="rectangle2" style="position:absolute;left:60px;top:341px;z-index:90;"></div>
+
+    <div id="loadDiv" class="imgText2" style="top:310px"><img src="ss.assets/loadingIcon.png" id="loadIcon" class="loadIcon3Class" style="position:absolute;left:40px;top:23px;z-index:95;" alt="">
+          <div id="loadingText" style="position:absolute;left:43px;top:85px;font-family: -apple-system, system-ui, BlinkMacSystemFont;font-size: 14px;" class="">loading</div></div>
+       </div>
+    
+    
+    
+    <!---            year    ---------->
+    <div id="threeYear" class="tabcontent" style="opacity:0;position:absolute;top:230px;left:65px;">
+                <div class="emptyDiv"></div>
+   <div id="freshDate" >
+          
+      </div>
+  </div>
+<div id="threeYearLoad" class="">
+    <div id="loadDiv2" class="imgText" style="top:310px;"><img src="ss.assets/loadingIcon.png" id="loadIcon2" class="loadIcon3Class" style="position:absolute;left:50px;top:73px;z-index:95;" alt="">
+          <div id="loadingText2" style="position:absolute;left:53px;top:133px;" class="">loading</div></div>
+
+          <div id="rectYear" class="rectangle" style="position:absolute;left:60px;top:390px;z-index:90;font-family: -apple-system, system-ui, BlinkMacSystemFont;font-size: 14px;"> </div>
+    </div>
+          
+      
+    
+     <!---            --    ---------->
+     <!--<div id="fourOtherLoad" class="hideDiv">
+     <div id="loadDiv3" class="imgText2"><img src="ss.assets/loadingIcon.png" id="loadIcon3"  class="loadIcon3Class" style="position:absolute;left:48px;top:148px;z-index:13;" alt=""/>
+      <a id="loadingText3" style="position:absolute;left:53px;top:206px;">loading</a></div>
+      <div id="rectYear4" class="rectangle" style="position:absolute;left:68px;top:435px;">
+  </div>
+     </div>-->
+     
+     <div id="fourOtherLoad" class="">
+     <div id="loadDiv3" class="imgText2"><img src="ss.assets/loadingIcon.png" id="loadIcon3" class="loadIcon3Class" style="position:absolute;left:38px;top:152px;z-index:95;" alt="">
+      <div id="loadingText3" style="position:absolute;left:43px;top:211px;font-family: -apple-system, system-ui, BlinkMacSystemFont;font-size: 14px;" class="">loading</div></div>
+      <div id="rectYear4" class="rectangle" style="position:absolute;left:58px;top:440px;z-index: 90;">
+</div>
+     </div>
+     
+  <div id="fourOther" class="tabcontent" style="opacity:0;position:absolute;top:260px;left:85px;height:240px;">
+               <div class="emptyDiv"></div>
+</div> 
+      
+<!--<img src="ss.assets/bottomSelectionScreenClear.png" alt="" style="width:70%; height:30%;position:absolute;left:55px;top:400px"/>--></div>
+      </div> <!-- END OF STEP 2 !!!!!!! -->
+     
+      
+         <!-- ///////// STEP 3 SUMMARY OR RESULT //////// -->
+      
+      <div data-role="page" id="stepThreeResult">
+          
+          <ul id="header">
+          <li id="head"><a href="#stepTwo" id="returnStepTwo"><i class="fa fa-angle-double-left"></i></a></li>
+          <li id="headTitle"><a href="#" style="position:relative;left:20px;">Summary</a></li>
+          
+          </ul>
+   
+          <img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="smallerImage" src="" alt=""/>
+           <img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="largerImage" src=""  alt=""/>
+          <div role="main" class="ui-content">
+      
+          
+         <!--<div data-role="navbar">
+          <ul id="sectionPick" style="position:relative;left:20px;">
+        <li><p style="color:#1989AC;position:relative;left:-3px;">Region</p> <i class="w3-margin-left fa fa-map-marker" style="font-size:26px;color:#1989AC;margin-left:15px"></i></li>
+        <li><p style="color:#1989AC;position:relative;left:-3px;">Period</p> <i class="w3-margin-left fa fa-calendar-o" style="font-size:26px;color:#1989AC;margin-left:10px"></i></li>
+        <li><p style="color:#1989AC;position:relative;left:0px;">Year</p> <i class="w3-margin-left fa fa-sort-alpha-asc" style="font-size:26px;color:#1989AC;margin-left:7px"></i></li>
+        <li><p style="color:#1989AC;position:relative;left:0px;">Other</p> <i class="w3-margin-left fa fa-asterisk" style="font-size:26px;color:#1989AC;margin-left:9px"></i></li>
+        </ul>  
+        </div>-->
+         <!-- creating three divs for proper allignment-->
+         <!-- table allign-->
+         <div style="position:absolute; left:20px; top:50px;">
+        
+                 <div id="regionAllign" class="symbolStyleResult" style="position:absolute; left:30px; top:200px; ">
+             
+             <p style="color:#1989AC;" class="center-this tier2">Region</p> <div class="w3-margin-left fa fa-map-marker center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+             <div id="listReg" class="center-this tier1" ><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LStandard1678-1998/S.1991-1998.png" >--></div>
+             <div id="listRegVal" class="center-this tier0" ><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LStandard1678-1998/S.1991-1998.png" >--></div>
+
+         </div> 
+                 
+                 <div id="periodAllign" class="symbolStyleResult" style="position:absolute; left:120px; top:200px; " >
+             
+             <p style="color:#1989AC;" class="center-this tier2">Period</p> <div class="w3-margin-left fa fa-calendar-o center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+        <div id="listPer" class="center-this tier1"><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/Grouped/LAssayOffice1678-1998/O.1680-1697.png" >--></div>
+
+             
+         </div>
+           
+                 <div id="yearAllign" class="symbolStyleResult" style="position:absolute; left:210px; top:200px; ">
+             
+             <p style="color:#1989AC;" class="center-this tier2">Year</p> <div class="w3-margin-left fa fa-sort-alpha-asc center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+             <div id="listYea" class="center-this tier1"><!--<p id="yearAllign" style="position:relative;left:10px;top:10px">--><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/DUBLIN/Grouped/DDateLetters1638-1998/B/DL.1659.png" >--></div>
+
+             
+         </div>
+                  
+                 <div id="dutyAllign" class="symbolStyleResult" style="position:absolute; left:300px; top:200px; ">
+                   
+             <p style="color:#1989AC;" class="center-this tier2">Other</p> <div class="w3-margin-left fa fa-asterisk center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+          <div id="listOth" class="center-this tier1"><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LDuty1796-1977/D.1838-1855.png" >--></div>
+
+             
+         </div>
+             
+         </div>
+         <!----------------->
+         <!--region-->
+         
+         <!--period-->
+         
+         
+         <!--year-->
+         
+                 
+         <!--duty-->
+         
+         
+         
+         
+         
+         
+         <!-- /// WHERE SELECTED HALLMARKS FROM PREVIOUS PAGE WILL GO /// -->
+         <!--<div data-role="navbar" id="selectMarkResult">
+       <ul>
+        <li id="listReg"><p><img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LStandard1678-1998/S.1991-1998.png" <p=""></p></li>
+        <li id="listPer" class="periodAllign"><p><img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/Grouped/LAssayOffice1678-1998/O.1680-1697.png" <p=""></p></li>
+        <li id="listYea" class="yearAllign"><p id="yearAllign" style="position:relative;left:10px;top:10px"><img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/DUBLIN/Grouped/DDateLetters1638-1998/B/DL.1659.png" ></p>
+        
+        </li>
+        <li id="listOth"><p><img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LDuty1796-1977/D.1838-1855.png" <p=""></p></li>
+        </ul>  
+        </div>-->
+         <!-- // values will appear here // -->
+         <div style="position:absolute; top:400px;">
+         <!--<div data-role="navbar" id="selectMarkValue" >
+       <ul>
+        <li id="listRegVal"></li>
+        <li id="listPerVal"></li>
+        <li id="listYeaVal"></li>
+        <li id="listOthVal"></li>
+        </ul>  
+        </div>-->
+             <div id="yearValue" style="position:relative;left:100px; border-style: none;"></div>
+         <br>
+          
+    
+
+           <a href="#" onclick="document.getElementById('nameItem').style.display='block'" id="newSave" class="ui-btn ui-btn-inline ui-corner-all" style="position:relative; left:75px;font-family: -apple-system, system-ui, BlinkMacSystemFont;font-size: 14px;color:#9e890f">Save New Item</a> 
+      
+           <!-- add name and note to item -->
+          <div id="nameItem" class="modal">  
+                        <div onclick="document.getElementById('nameItem').style.display='none'"  class='close' title="Close Modal" style="position:relative; top:45px; left:330px">&times;</div>
+
+          <form class="modal-content animate" action="/action_page.php">
+          
+        
+          <div class="container">
+          <label><b>Name</b></label>
+          <input type="text" id="newTitle" placeholder="Enter Name" name="uname" required>
+          <label><b>Notes</b></label>
+          <input type="text" id="newNote" placeholder="Enter any additional information" name="note"  required>
+          <button type="submit" style="background-color:#FFDE25" id="saveButton" onclick="saveButtonClicked();clearData();" ><a href="#savedResult" style='text-decoration:none; color:#9e890f'>Save</a></button>
+          </div>
+        </form>
+         </div>
+                 
+          </div> 
+</div> 
+      </div>   
+           <!-- END OF STEP 3 !!!!!!! -->
+      
+      
+      <!-- /////////  SAVED RESULT //////// -->
+      
+      <div data-role="page" id="savedResult"> <!-- access this from main menu -->
+       <ul id="header">
+          <li id="linkToSaves"><a href="#savedItems"><i class="fa fa-angle-double-left"></i></a></li>    <!-- changed the link to saved item id--->
+          </ul>  
+ 
+          <!--<img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="smallerAImage" src="" alt=""/>-->
+           <img style="display:none; max-height:160px; width:auto;margin:0 auto;" id="largerAImage" src=""  alt=""/>
+           
+          
+           <!--- centered code------------------------>
+           <div style="position:absolute; left:20px; top:50px;">
+        
+                 <div id="regionAllign" class="symbolStyleResult" style="position:absolute; left:30px; top:200px;">
+             
+             <p style="color:#1989AC;" class="center-this tier2">Region</p> <div class="w3-margin-left fa fa-map-marker center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+             <div id="saveReg" class="center-this tier1" ><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LStandard1678-1998/S.1991-1998.png" >--></div>
+             <!--<div id="saveRegVal" class="center-this tier0" ><img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LStandard1678-1998/S.1991-1998.png" ></div>-->
+
+         </div> 
+                 
+                 <div id="periodAllign" class="symbolStyleResult" style="position:absolute; left:120px; top:200px; " >
+             
+             <p style="color:#1989AC;" class="center-this tier2">Period</p> <div class="w3-margin-left fa fa-calendar-o center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+        <div id="savePer" class="center-this tier1"><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/Grouped/LAssayOffice1678-1998/O.1680-1697.png" >--></div>
+
+             
+         </div>
+           
+                 <div id="yearAllign" class="symbolStyleResult" style="position:absolute; left:210px; top:200px; ">
+             
+             <p style="color:#1989AC;" class="center-this tier2">Year</p> <div class="w3-margin-left fa fa-sort-alpha-asc center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+             <div id="saveYea" class="center-this tier1"><!--<p id="yearAllign" style="position:relative;left:10px;top:10px">--><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/DUBLIN/Grouped/DDateLetters1638-1998/B/DL.1659.png" >--></div>
+
+             
+         </div>
+                  
+                 <div id="dutyAllign" class="symbolStyleResult" style="position:absolute; left:300px; top:200px; ">
+                   
+             <p style="color:#1989AC;" class="center-this tier2">Other</p> <div class="w3-margin-left fa fa-asterisk center-this" style="font-size:26px;color:#1989AC;margin-left:0px"></div>
+          <div id="saveOth" class="center-this tier1"><!--<img src="https://s3.eu-west-1.amazonaws.com/symbolsmith/DigitisedSymbols/LONDON/GROUPED/LDuty1796-1977/D.1838-1855.png" >--></div>
+
+             
+         </div>
+             
+         </div>
+           
+           
+           <!--------- centered code------------------>
+           
+           <!--
+           <div data-role="navbar">
+          <ul id="sectionPick">
+        <li><p style="color:#1989AC">Region</p> <i class="w3-margin-left fa fa-map-marker" style="font-size:26px;color:#1989AC;margin-left:15px"></i></li>
+        <li><p style="color:#1989AC">Period</p> <i class="w3-margin-left fa fa-calendar-o" style="font-size:26px;color:#1989AC;margin-left:7px"></i></li>
+        <li><p style="color:#1989AC">Year</p> <i class="w3-margin-left fa fa-sort-alpha-asc" style="font-size:26px;color:#1989AC;margin-left:5px"></i></li>
+        <li><p style="color:#1989AC">Other</p> <i class="w3-margin-left fa fa-asterisk" style="font-size:26px;color:#1989AC;margin-left:5px"></i></li>
+        </ul>  
+        </div>-->
+         
+         <!-- /// WHERE SELECTED HALLMARKS FROM PREVIOUS PAGE WILL GO /// -->
+        <!--<div data-role="navbar" id="savedMarkResult">
+       <ul>
+        <li id="saveReg"></li>
+        <li id="savePer"></li>
+        <li id="saveYea"></li>
+        <li id="saveOth"></li>
+        </ul>  
+        </div> -->
+        
+         
+         
+        <div style="padding:8px; margin-left:20px; position:absolute; top:450px"><div id="ssTitle"></div>
+             <div style="position:relative; top:10px"><h4>Notes:</h4><p style="position:relative; top:-20px" id="ssNotes"></p>
+                 <div id="yearValue2" style="position:relative; top:-50px; left:0px;"><p id="saveSaved"></p></div></div>
+
+         </div>
+          
+         
+         </div> <!-- END OF SAVED RESULT !!!!!!! -->
+     
+         
+ <!-- START OF SAVED ITEMS PAGE  -->  
+  <div data-role="page" id="savedItems">
+    
+    <ul id="headerSave">
+          <li id="headS"><a href="#" onclick="openNav()"><i class="fa fa-navicon"></i></a></li>
+          </ul>
+    
+        <div role="main" class="ui-content">
+            
+            <ul data-role="listview" data-inset="true" id="mySlist">
+
+</ul>  
+     </div>
+</div> <!-- END OF SAVED ITEMS!!!!!!! -->
+
+       
+      <!-- ///////// EXPLORE //////// -->
+      <div data-role="page" id="exploreScrn">
+          <div role="main" class="ui-content">
+              <ul id="headerSave">
+          <li id="headS"><a href="#" onclick="openNav()"><i class="fa fa-navicon"></i></a></li>
+          </ul>
+  
+    <ul id="exploreOptions">
+    <li style="text-decoration:none"><a href="#introHall">Introduction to Hallmarks <i class="fa fa-angle-double-right"></i></a></li>
+<!--<br>-->
+     <li><a href="#markList" style="text-decoration:none">Categories of Hallmarks <i class="fa fa-angle-double-right"></i></a></li>
+     <!--<br>-->
+    <li><a href="#exCity" style="text-decoration:none">Locations <i class="fa fa-angle-double-right"></i></a></li>
+   <!--<br>-->
+    <!-- <li><a href="#exAll" style="text-decoration:none">Search Hallmarks <i class="fa fa-angle-double-right"></i></a></li>
+    -->
+    </ul>      
+          </div>
+      </div>
+            <!-- ///////// END OF EXPLORE PAGE //////// -->          
+            
+      <!-- ///////// EXPLORE BY CITY //////// -->
+      <div data-role="page" id="exCity">
+        
+          <ul id="header">
+          <li id="head"><a href="#exploreScrn"><i class="fa fa-angle-double-left"></i></a></li>
+          <li id="headTitleB"><a href="#">Locations</a></li>
+          </ul>  
+   
+          <p style="font-size:14px; margin-left:35px"> Symbol Smith provides marks for are 3 Locations: </p>       
+ <div class="tabSt">
+  <a class="tablinks" onclick="openCity(event, 'lonSt')">London</a>
+  <a class="tablinks" onclick="openCity(event, 'birSt')">Birmingham</a>
+  <a class="tablinks" onclick="openCity(event, 'dubSt')">Dublin</a>
+</div>
+         
+<div id="lonSt" class="tabStcontent">
+    <br>
+<img src="ss.assets/noun_1097440_cc.png" alt="" style="width:20%"/> <img src="ss.assets/noun_591410_cc.png" alt="" style="width:20%"/>  <img src="ss.assets/noun_6433_cc.png" alt="" style="width:20%"/>
+<h3>London</h3>
+<p><strong>Guild Mark:</strong> Leopard's head or Lion's Passant </p>
+<p>Both vary in aspects, the leopards head was surmounted with a crown between 1478-1820. Sometimes on small pieces it was omitted altogether especially between 1790-1820.</p> 
+<p> London had a very high standard of design and workmanship over the centuries. The work showed a lot of individuality in conception and execution of pieces. They have recieved world admiration. </p>
+<br>
+</div>
+
+<div id="birSt" class="tabStcontent">
+    <br>
+<img src="ss.assets/noun_974166_cc.png" alt="" style="width:20%"/>
+<h3>Birmingham</h3>
+<p><strong>Guild Mark:</strong> Anchor accompanied by Lion Passant</p>
+<p>Established by the <a>Act of Parliament</a> in 1773.</p>
+<p>During the 20th Century an anchor placed on its side represented gold and an upright mark represented silver. From 1999 on it was placed on its side for all metals</p>
+<br>
+</div>
+
+<div id="dubSt" class="tabStcontent">
+<br>
+<img src="ss.assets/noun_25868_cc.png" alt="" style="width:20%"/>
+<h3>Dublin</h3>
+<p><strong>Guild Mark:</strong> Harp Crowned. From 1731 figure of Hibernia was added</p> 
+<p>Hallmarking in Ireland began in middle of 17th century. A whole range of silver craft was found bearing the Dublin mark. Dublin was known for its excellent
+workmanship and designs of a decorative nature. From the 18th century, the influence of emigrant goldsmiths can be seen.
+Dublin was unaffected by 1973 British hallmarking Act.</p>
+<br>
+</div> 
+          
+       <p style="font-size:14px; margin:20px 0px 10px 35px">Other locations include:</p>
+      
+       <div class="scrollmenu">
+       <a href="#chester" data-rel="popup"><img src="ss.assets/chester.png" alt="" style="width:15%"/></a>    
+       <a href="#glasgow" data-rel="popup"><img src="ss.assets/glasgow.png" alt="" style="width:15%"/></a>
+       <a href="#norwich" data-rel="popup"><img src="ss.assets/norwich.png" alt="" style="width:20%"/></a>
+       <a href="#exeter" data-rel="popup"><img src="ss.assets/noun_632591_cc.png" alt="" style="width:15%"/></a>
+       <a href="#sheffield" data-rel="popup"><img src="ss.assets/noun_6433_cc.png" alt="" style="width:15%"/></a>
+       <a href="#edinburgh" data-rel="popup"><img src="ss.assets/noun_957473_cc.png" alt="" style="width:20%"/></a>
+         </div>
+
+       
+    <div data-role="popup" id="chester" class="ui-content">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+     <p style="color:#1989AC">Chester</p><p> Mark = Shield bearing arms of the city</p>
+    </div>
+       <div data-role="popup" id="glasgow" class="ui-content">
+           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p style="color:#1989AC">Glasgow</p><p> Mark = Based on the arms of the city</p>
+    </div>
+       <div data-role="popup" id="norwich" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p style="color:#1989AC">Norwich</p><p> Mark = Castle surmount on lion passant</p>
+    </div>
+       <div data-role="popup" id="exeter" class="ui-content">
+           <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p style="color:#1989AC">Exeter</p><p> Mark= X usually in a round shield surmounted by crown, From 1701 3 towered castle</p>
+    </div>
+        <div data-role="popup" id="sheffield" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p style="color:#1989AC">Sheffield</p><p> Mark = Crown </p>
+    </div>
+        <div data-role="popup" id="edinburgh" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+    <p style="color:#1989AC">Edinburgh</p><p> Mark = 3 towered castle. *From 1701, also represented Exeter</p>
+    </div>
+       
+      </div> <!-- END OF EXPLORE !!!!!!! -->
+      
+      
+        <!-- ///////// EXPLORE 2 //////// -->
+        <div data-role="page" id="introHall">
+            <ul id="header">
+          <li id="head"><a href="#exploreScrn"><i class="fa fa-angle-double-left"></i></a></li>
+          <li id="headTitleB"><a href="#">What are Hallmarks?</a></li>
+          </ul>  
+            
+ <div style="margin:15px 20px 0px 25px; font-size:14px">       
+     <p>A hallmark is mark stamped on articles of gold, silver, or platinum by the British assay offices, certifying their standard of purity. Most articles of silver will bear marks these which are embedded by its manufacturer and enable the years and origin to be traced. Three key marks, <strong>the standard, the assay office & the date letter</strong> can determine its finness & value. </p>
+     <p>For centuries British silver is protected by the stamping of these symbols and letters. Thanks to the "date letter" any piece of British sterling silver can be exactly dated.</p>
+   <p>Hallmarks are applied with a hammer and punch, a process that leaves sharp edges and spurs of metal. Therefore, hallmarking is generally done before the piece goes for its final polishing.
+   <a href="#markList" data-transition="flip">See More >></a> </p>
+ </div>
+    <div style="margin:15px 20px 0px 25px; font-size:14px">     
+   <p style="color:#1989AC"><strong>No Marks??</strong></p>
+   <p>If the piece has other marks it could be silver plated or silver from outside Britain. If it has no marks at all, The marks may have been rubbed off but it cannot be legally sold as silver. It is instead sold as white metal.</p>
+       
+        </div>
+        </div>
+
+        <!-- no marks -->
+        <div data-role="page" id="noMarks">
+            <ul id="header">
+          <li id="head"><a href="#stepOne"><i class="fa fa-angle-double-left"></i></a></li>
+          <li id="headTitleB"><a href="#">What are Hallmarks?</a></li>
+          </ul>  
+            
+ <div style="margin:15px 20px 0px 25px; font-size:14px">       
+     <p>A hallmark is mark stamped on articles of gold, silver, or platinum by the British assay offices, certifying their standard of purity. Most articles of silver will bear marks these which are embedded by its manufacturer and enable the years and origin to be traced. Three key marks, <strong>the standard, the assay office & the date letter</strong> can determine its finness & value. </p>
+     <p>For centuries British silver is protected by the stamping of these symbols and letters. Thanks to the "date letter" any piece of British sterling silver can be exactly dated.</p>
+   <p>Hallmarks are applied with a hammer and punch, a process that leaves sharp edges and spurs of metal. Therefore, hallmarking is generally done before the piece goes for its final polishing.
+   <a href="#markList" data-transition="flip">See More >></a> </p>
+ </div>
+    <div style="margin:15px 20px 0px 25px; font-size:14px">     
+   <p style="color:#FFDE25"><strong>No Marks</strong></p>
+   <p>If the piece has other marks it could be silver plated or silver from outside Britain. If it has no marks at all, The marks may have been rubbed off but it cannot be legally sold as silver. It is instead sold as white metal.</p>
+       
+        </div>
+        </div>
+        
+      <div data-role="page" id="markList">
+          <ul id="headerSave">
+          <li id="headS"><a href="#exploreScrn"><i class="fa fa-angle-double-left"></i></a></li>
+          <li id="headTitleW"><a href="#">Hallmark Categories</a></li>
+          </ul>
+          <p style="color:white; margin:0px 25px 0px 20px; font-size:14px">Most items will contain marks from each of these categories, the first three are the most important.  The other categories will help produce more accurate results</p>
+          
+          <div data-role="collapsibleset" data-theme="a" data-content-theme="a" >
+<div data-role="collapsible" data-iconpos="right">
+        <h3 style="color:#1989AC">Region <i class="fa fa-map-marker" style="color:#1989AC"></i></h3>
+        <p>Also know as Standard Marks, Show the Fineness or Purity of the silver. In England there have been two standards to which silver was assayed, Sterling & Britannia. From 1720, Sterling became the legally required standard.</p>
+      </div>
+<div data-role="collapsible" data-iconpos="right">
+     <h3>Period <i class="fa fa-calendar-o" style="color:#1989AC"></i></h3>
+    <p>Also known as Assay Office or Town marks. They enable the location of the assay office that tested and hallmarked the article to be traced but it’s not necessarily where it was manufactured. Marks differed at each assay office. </p>
+         </div> 
+<div data-role="collapsible" data-iconpos="right">
+        <h3>Date Letter <i class="fa fa-sort-alpha-asc" style="color:#1989AC"></i></h3>
+    <p>Letters of the alphabet are used as marks to represent the date of manufacture. Only from 1975 did all date letters coincide with the calender year. The various cycles of date letters can be identified by their forms & shape of their shields. </p>
+      </div>
+<div data-role="collapsible" data-iconpos="right">
+        <h3>Additional <i class="fa fa-asterisk" style="color:#1989AC"></i></h3>
+    <p>These are not part of the marks that show fineness, but if absent when they should be present that should raise a question.</p>
+<p><strong>Duty Marks</strong> - A mark of the sovereigns head showed duty was paid. Variable tax was levied on all silver in Great Britain. However marks were slow to change of on death of the sovereigns, some offices took several years to change.</p>
+    <p>Other marks include the Draw-Back when duty was refunded 1784-85, the Kings Jubilee to commemorate 25th anniversary of his majesty, 1935-36 and the Cornation mark of Queen Elizabeth in 1953.</p>
+    </div>
+<div data-role="collapsible" data-iconpos="right">
+        <h3>Makers <i class="fa fa-archive" style="color:#1989AC"></i></h3>
+    <p>Although we don't provide access to makers marks, it is important to know they will also appear on most silver items. 
+    <strong>Makers Marks</strong> - Represent the craft persons responsible for design, manufacture, decorating, finishing and selling the article. From 1697-1720 by law the first two letters of your surname was used. From 1999 they became known as sponsor’s mark. There are large volumes of makers marks.</p>
+    </div>
+    </div>
+        
+</div>
+        
+        
+
+<!-- ///////// explore database //////// -->
+<!-- <div data-role="page" id="exAll">         
+<ul id="header">
+          <li id="head"><a href="#exploreScrn"><i class="fa fa-angle-double-left"></i></a></li>
+          </ul>
+    
+            <!-- icon bar -->
+   <!--        <div class="icon-bar">
+  <a href="#" onclick="openFull(event, 'allRegion')" id="regionFull" ><i class="fa fa-map-marker" style="color:#1989AC"></i></a> 
+  <a href="#" onclick="openFull(event, 'allPeriod')" id="periodFull"><i class="fa fa-calendar-o" style="color:#1989AC"></i></a> 
+  <a href="#" onclick="openFull(event, 'allYear')" id="yearFull"><i class="fa fa-sort-alpha-asc" style="color:#1989AC"></i></a> 
+  <a href="#" onclick="openFull(event, 'allOther')" id="otherFull"><i class="fa fa-asterisk" style="color:#1989AC"></i></a> 
+</div>
+  
+
+    <!--- TABS where the returned data will be displayed -->
+    
+ <!--  <div id="allRegion" >
+  </div>
+  <div id="allPeriod"></div>
+  <div id="allYear"> 
+  <div id="aDate"></div>
+</div>
+  <div id="allOther">
+  </div>        
+            
+            
+    
+    </div> -->
+
+    </body>
+</html>

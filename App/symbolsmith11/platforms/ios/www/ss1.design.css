@@ -1,0 +1,999 @@
+/* SCREEN BASICS */
+
+/*background colours */
+
+#onBoarding {   
+background-color: #E8F1F5;
+}
+#menuScrn {
+    background-color: #E8F1F5;
+}
+#startProj {
+    background-image: url('ss.assets/start new proj.png');
+    width: 100%;
+    height: auto
+}
+/*#stepOne {
+    background-color: #E8F1F5;
+}*/
+#stepTwo {
+    /*background-color: #E8F1F5;*/
+ /*background-image: url('ss.assets/backroundImage.png');
+ background-size:100%;*/
+    height:667px;
+}
+#stepThreeResult {
+    background-color: #E8F1F5;
+}
+#savedItems {
+    background-image: url('ss.assets/saved items menu.png');
+    background-size: 375px 667px;
+}
+ #exploreScrn { 
+    background-image: url('ss.assets/more info menu.png');
+    background-size: 375px 667px;
+}
+#exCity {
+   background-color: #E8F1F5;
+}
+#incorrectFind {
+    background-color: #FFDE25;
+}
+#correctFind {
+    background-color: #1989AC;
+}
+#onOpen {
+    background-image: url('ss.assets/start.tour.png');
+    background-size: 375px 667px;
+}
+#onCamera {
+    background-color: #E8F1F5;
+}
+#onSelect {
+    background-color: #E8F1F5;
+}
+#onCategories {
+    background-color: #E8F1F5;
+}
+#onSave {
+    background-color: #E8F1F5;
+}
+#introHall {
+    background-color: #E8F1F5;
+}
+#onEnd {
+    background-image: url('ss.assets/start.tour.end.png');
+    background-size: 375px 667px;
+}
+#onSix {
+    background-image: url('ss.assets/start.tour.end.png');
+    background-size: 375px 667px;
+}
+#markList {
+    background-image: url('ss.assets/saved items menu.png');
+    background-size: 375px 667px;
+}
+#noMarks {
+   background-color: #E8F1F5;
+}
+#savedResult
+{
+   background-color: #E8F1F5;
+}
+#exAll
+{
+   background-color: #E8F1F5;
+}
+/* header */
+#header {
+    list-style-type: none;
+    margin-top: 12px;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #E8F1F5;*/
+}
+
+#headerSave {
+    list-style-type: none;
+    margin-top: 12px;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#head {
+    float: left;
+    font-size: 20px;
+}
+#head a {
+    display: block;
+    color: #283E56;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#head a:active {
+   color: #1989AC;
+}
+
+#headTitle {
+    float: left;
+    margin-left: 65px;
+    font-size: 18px;
+    color: #283E56;
+    text-align: center;
+}
+#headTitle a {
+    display: block;
+    color: #283E56;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#headTitleB {
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    color: #283E56;
+    text-align: center;
+}
+#headTitleB a {
+    display: block;
+    color: #283E56;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#headTitleW {
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+#headTitleW a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#headS {
+    float: left;
+    font-size: 20px;
+}
+#headS a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+#headS a:active {
+   color: #1989AC;
+}
+
+
+/* START SCREEN */
+/*//////////////////////////*/
+
+#startScrn {
+    background-image: url('ss.assets/start.screen.png');
+    background-size: 375px 667px;
+    width: 100%;
+    height: 667px;
+}
+#logoRotate {
+  z-index: 1;
+  margin: 140px 85px 280px 155px;
+  width: 18%;
+-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+from {
+-webkit-transform: rotate(0deg);
+}
+to {
+-webkit-transform: rotate(359deg);
+}
+}
+#getStart {
+    margin: -130px 0px 0px 72px;
+    width: 200px;
+    font-size: 14px;
+    background-color: #FFDE25;
+    color:#9E890F;
+}
+
+#skipBtn {
+    margin-left: -200px;
+    font-size: 13px;
+}
+
+
+/* ONBOARDING SCREEN */
+/*//////////////////////////*/
+#onOne {
+    background-image: url('ss.assets/1on.png');
+    background-size: 375px 667px;
+}
+#onTwo {
+    background-image: url('ss.assets/2on.png');
+    background-size: 375px 667px;
+}
+#onThree {
+    background-image: url('ss.assets/3on.png');
+    background-size: 375px 667px;
+    
+}
+#onFour {
+    background-image: url('ss.assets/4on.png');
+    background-size: 375px 667px;
+}
+#onFive {
+    background-image: url('ss.assets/5on.png');
+    background-size: 375px 667px;
+}
+
+
+
+
+/* Caption text */
+.captext {
+  color: black;
+  font-size: 14px;
+  margin-left: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.captextSec{
+  color: black;
+  font-size: 13px;
+  margin-left: 20px;
+  width: 90%;
+}
+/* skip header */
+.skipButt {
+  color: #1989AC;
+  font-size: 18px;
+  font-style: oblique;
+  padding: 8px 12px;
+  position: absolute;
+  margin: 22px 20px 0px 280px;
+    
+}
+
+#tourNew {
+    margin: 320px 0px 0px 100px; 
+    background-color:#FFDE25;
+    color:black
+}
+#tourEx {
+    margin: 100px 0px 0px 90px;
+}
+/* MENU SCREEN */
+/*//////////////////////////*/
+#menuScrn {
+    background-image: url('ss.assets/menu screen.png');
+    background-size: 375px 667px;
+}
+
+#qmBtn {
+display:inline;
+
+}
+#qmBtn a {
+text-decoration: none;
+color: #1989AC
+}
+
+#hw2Btn {
+display:inline;
+}
+#hw2Btn a {
+text-decoration: none;
+color: #1989AC
+}
+
+#siBtn {
+display:inline;
+}
+#siBtn a {
+text-decoration: none;
+color: #1989AC
+}
+
+#exBtn {
+display:inline;
+}
+#exBtn a {
+text-decoration: none;
+color: #1989AC
+}
+
+#menuTop {
+    margin: 290px 0px 0px 64px;
+    font-size: 48px;
+    text-decoration: none;
+    color: #1989AC;
+}
+
+#hw2Btn {
+    margin: 290px 0px 0px 84px;
+}
+
+#menuBot {
+    margin: 94px 0px 0px 57px;
+    font-size: 48px;
+    text-decoration: none;
+    color: #1989AC;
+}
+
+#siBtn {
+     margin: 94px 0px 0px 70px;
+}
+
+
+/* NAVIGATION MENU SCREEN */
+/*//////////////////////////*/
+
+ /* full screen nav menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #283E56;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:left;
+}
+
+.sidenav a {
+    padding: 38px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* IDENTIFY SCREENS */
+/*//////////////////////////*/
+
+/* SCREEN 1 - NEW PROJECT */
+/*//////////////////////////*/
+#startProjectBtn {
+    color: #FFDE25;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 172px;
+
+       
+}
+
+/* SCREEN 2 - STEP 1 - VALIDATION */
+
+
+#iconSelect{ 
+    margin-left: 10px;  
+}
+/*
+#listRegion {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+#lR {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-right:1px solid #bbb;
+}
+#lR:last-child {
+    border-right: none;
+}
+#valInfo {
+    font-size: 14px;
+    margin: 0px 15px 0px 15px;
+  
+} */
+
+/* choice validation and info */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 26px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 300px;
+    font-size: 17px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 300px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 300px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 300px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 300px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+/* drop down button */
+.dropbtn {
+    color: #283E56;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+ .dropbtn:active {
+   color: #FFDE25;
+}
+
+.editDrop {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+
+.show {display:block;}
+
+/* SCREEN 3 - STEP 2 - VALIDATION */
+/* tabs where marks appear */
+
+ .tabcontent {
+     position: relative;
+     z-index:0;
+    float: left;
+    /*border-top: 1px solid #ccc;*/
+    margin-left: 15px;
+    width: 80%;
+   height: 285px;
+   
+    overflow:scroll;
+} 
+
+#Sectiontabs { 
+    float: left;
+    width: 15%;
+}
+#Sectiontabs button { 
+    background-color:#dfdfdf; 
+}
+#Sectiontabs button.active { 
+    background-color:#c8b600; 
+}
+
+#threeYear {
+    
+}
+#threeYear button {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    color: #1989AC;
+}
+
+#choose {
+   padding: 0px;
+   margin-left: 55px;
+}
+#ThisIsRegion {
+    margin-left: 70px;
+    padding: 0px;
+}
+#ThisIsPeriod {
+    margin-left: 70px;
+    padding: 0px;
+}
+#ThisIsYear {
+    margin-left: 70px;
+    padding: 0px;
+}
+#ThisIsOther {
+    margin-left: 70px;
+    padding: 0px;
+}
+
+/* where selected marks appear */
+#selectMark {
+    /*border: 2px solid #1989AC;*/
+    width: 95%;
+    margin-left: 6.6px;
+    height:100px;
+    /*margin:5px 0px 0px 9px; 
+    padding-left: 15px;*/   
+  
+}
+
+/* SCREEN 4 - STEP 3 - RESULT */
+/*//////////////////////////*/
+#sectionPick {
+    margin-left: 20px;
+}
+#selectMarkResult {
+    width: 95%;
+    margin: 0 auto; 
+    padding-left: 15px;
+}
+
+/* SAVED ITEMS SCREENS */
+/*//////////////////////////*/
+
+#savedList{
+    background-color: #1989AC;
+}
+
+#itemS{
+    border-color: #FFDE25;
+    
+}
+#yearValue {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #283E56;
+    border: 2px solid #283E56;
+    padding: 8px;
+}
+/* #newSave {
+    color:black;
+    font-family:SF UI Display;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 90px;
+} */
+
+#newSave
+{
+    width:100%;
+    background-color:#FFDE25;
+    color:black;
+    font-family:SF UI Display;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+
+}
+/* ///////////////// */
+/* SAVE ITEM PAGES*/
+/* //////////////// */
+
+/* SAVE ITEM MODAL */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+span.note {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+ 
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.note {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* matching year validation overlay panel */ 
+
+.matchCheck {
+    position: relative;
+    width: 100%;
+    margin: 130px 0px 0px 35px;
+}
+
+#matchIcon {
+    font-size: 60px;   
+}
+#tryAgain {
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+/* EXPLORE SCREEN */
+/*//////////////////////////
+
+/* menu screen */
+#exploreOptions {
+    margin: 170px 0px 0px 20px;
+    list-style-type: none;
+}
+
+#exploreOptions li a {
+    text-decoration: none;
+}
+/* CITY TABS */
+/* Style the tab */
+div.tabSt {
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+div.tabSt a {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    margin-left: 22px;
+    color: #1989AC;
+}
+
+
+/* Create an active/current tablink class */
+div.tabSt a.active {
+  color: #283E56;
+  background-color: white; 
+}
+
+/* Style the tab content */
+.tabStcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+    width: 90%;
+    margin-left: 22px;
+}
+
+.tabStcontent h3 {
+    color: #1989AC
+}
+
+.tabStcontent p {
+    font-size: 14px;
+}
+
+.tabStcontent a {
+    font-size: 14px;
+}
+ /* INTRO HALL */
+ 
+ /* SCROLL MENU */
+div.scrollmenu {
+    background-color: #4CAECD;
+    overflow: auto;
+    white-space: nowrap; /*keep it inline */
+}
+
+div.scrollmenu a {
+    /* display: inline-block;*/
+    color: white;
+    text-align: center;
+    padding: 60px 18px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:active {
+    background-color: #0F647F;
+}
+
+/* explore page icon bar */
+.icon-bar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #ECECEC;
+}
+
+.active {
+    background-color: #ECECEC; 
+}
+
+/* explore screen */
+/* model images for locations */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* save item */
+/* Style the input */
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 50px;
+  background: #FFDE25;
+  color: black;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#newName {
+    width: 300px;
+    height: 170px;
+}
+
+#myUL li {
+    font-size:16px;
+}
+
+/* icon bar explore al */
+/* explore page icon bar */
+.icon-bar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #283E56;
+}
+
+.active {
+    background-color: #283E56; 
+}
